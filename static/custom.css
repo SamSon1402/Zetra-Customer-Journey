@@ -1,0 +1,271 @@
+@import url('https://fonts.googleapis.com/css2?family=VT323&family=Space+Mono&display=swap');
+
+/* Main container styling */
+.main {
+    background-color: #121212;
+    color: #ffffff;
+    font-family: 'Space Mono', monospace;
+}
+
+/* Headers */
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'VT323', monospace;
+    text-transform: uppercase;
+    color: #00ffff;
+    text-shadow: 2px 2px 0px #ff0066;
+    padding: 5px 0;
+    margin: 5px 0;
+}
+
+/* Text-based display elements */
+.text-display {
+    font-family: 'VT323', monospace;
+    background-color: #1e1e2f;
+    border: 2px solid #00ffff;
+    padding: 15px;
+    margin: 10px 0;
+    color: #ffffff;
+}
+
+/* Text tables */
+.text-table {
+    font-family: 'Space Mono', monospace;
+    border-collapse: collapse;
+    width: 100%;
+    margin: 10px 0;
+}
+
+.text-table th {
+    background-color: #121212;
+    color: #00ffff;
+    text-align: left;
+    padding: 8px;
+    font-family: 'VT323', monospace;
+    border-bottom: 2px solid #00ffff;
+}
+
+.text-table td {
+    padding: 8px;
+    border-bottom: 1px solid #2d2d44;
+}
+
+.text-table tr:hover {
+    background-color: #2d2d44;
+}
+
+/* Metric display */
+.text-metric {
+    font-family: 'VT323', monospace;
+    font-size: 24px;
+    padding: 15px;
+    margin: 5px 0;
+    background-color: #1e1e2f;
+    border-left: 4px solid #00ffff;
+}
+
+.text-metric-value {
+    font-size: 36px;
+    color: #00ffff;
+    text-shadow: 2px 2px 0px #ff0066;
+}
+
+.text-metric-label {
+    color: #ffffff;
+    text-transform: uppercase;
+}
+
+/* Section headers with retro gaming style */
+.section-header {
+    font-family: 'VT323', monospace;
+    font-size: 28px;
+    color: #ff0066;
+    text-shadow: 2px 2px 0px #00ffff;
+    margin: 20px 0 10px 0;
+    padding: 5px 0;
+    border-bottom: 2px dashed #00ffff;
+    text-transform: uppercase;
+}
+
+/* ASCII art container */
+.ascii-art {
+    font-family: monospace;
+    white-space: pre;
+    font-size: 14px;
+    color: #00ffff;
+    background-color: #1e1e2f;
+    padding: 15px;
+    border: 2px solid #ff0066;
+    overflow-x: auto;
+}
+
+/* Nav menu */
+.nav-menu {
+    display: flex;
+    justify-content: space-around;
+    background-color: #1e1e2f;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 2px solid #00ffff;
+}
+
+.nav-item {
+    font-family: 'VT323', monospace;
+    font-size: 24px;
+    color: #00ffff;
+    cursor: pointer;
+    padding: 5px 15px;
+}
+
+.nav-item-active {
+    color: #ffffff;
+    background-color: #ff0066;
+    padding: 5px 15px;
+}
+
+/* Progress bars */
+.progress-container {
+    background-color: #1e1e2f;
+    height: 25px;
+    width: 100%;
+    position: relative;
+    margin: 10px 0;
+    border: 1px solid #00ffff;
+}
+
+.progress-bar {
+    background-color: #00ffff;
+    height: 100%;
+    color: #121212;
+    text-align: center;
+    line-height: 25px;
+    font-family: 'VT323', monospace;
+}
+
+/* Custom horizontal bar representation using text */
+.text-bar {
+    font-family: 'Space Mono', monospace;
+    display: flex;
+    align-items: center;
+    margin: 8px 0;
+}
+
+.text-bar-label {
+    width: 200px;
+    text-align: right;
+    padding-right: 10px;
+    color: #ffffff;
+}
+
+.text-bar-visual {
+    flex-grow: 1;
+    height: 20px;
+    position: relative;
+}
+
+.text-bar-fill {
+    position: absolute;
+    height: 100%;
+    background-color: #00ffff;
+    color: #121212;
+    display: flex;
+    align-items: center;
+    font-family: 'VT323', monospace;
+    padding-left: 5px;
+}
+
+/* Simple button style */
+.text-button {
+    display: inline-block;
+    font-family: 'VT323', monospace;
+    font-size: 20px;
+    color: #ffffff;
+    background-color: #ff0066;
+    border: 2px solid #00ffff;
+    padding: 8px 16px;
+    margin: 5px;
+    cursor: pointer;
+    text-align: center;
+}
+
+.text-button:hover {
+    background-color: #ff4488;
+}
+
+/* Terminal-like container */
+.terminal {
+    background-color: #1e1e2f;
+    color: #00ffff;
+    font-family: 'Space Mono', monospace;
+    padding: 15px;
+    border: 2px solid #00ffff;
+    margin: 10px 0;
+    overflow-x: auto;
+}
+
+.terminal-text {
+    white-space: pre-wrap;
+    color: #ffffff;
+}
+
+.terminal-highlight {
+    color: #ff0066;
+}
+
+/* Alert boxes */
+.alert-box {
+    border-left: 4px solid #ff0066;
+    background-color: #1e1e2f;
+    padding: 10px 15px;
+    margin: 10px 0;
+    font-family: 'Space Mono', monospace;
+}
+
+.alert-title {
+    color: #ff0066;
+    font-family: 'VT323', monospace;
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+.alert-content {
+    color: #ffffff;
+}
+
+/* Add loading animation */
+@keyframes blink {
+    0% { opacity: 1; }
+    50% { opacity: 0.5; }
+    100% { opacity: 1; }
+}
+
+.loading-text {
+    animation: blink 1s infinite;
+}
+
+/* Improve readability in dark mode */
+.streamlit-container {
+    max-width: 100%;
+}
+
+.stApp {
+    background-color: #121212;
+}
+
+/* Make scrollbars match the aesthetic */
+::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: #1e1e2f;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #00ffff;
+    border: 1px solid #ff0066;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #ff0066;
+}
